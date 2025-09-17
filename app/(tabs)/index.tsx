@@ -66,28 +66,18 @@ export default function Home() {
   const [selectedTab, setSelectedTab] = useState<"smart" | "advanced">("smart");
   const [selectedPoster, setSelectedPoster] = useState<string>("1");
 
-  const [description, setDescription] = useState(
-    "stunning promotional image of a deliciously decorated cake, emphasizing its layers, frosting, and toppings in an enticing setting."
-  );
-  const [descriptionImageUri, setDescriptionImageUri] = useState<string | null>(
-    null
-  );
+  const [description, setDescription] = useState("stunning promotional image of a deliciously decorated cake, emphasizing its layers, frosting, and toppings in an enticing setting.");
+  const [descriptionImageUri, setDescriptionImageUri] = useState<string | null>(null);
   const [sizeValue, setSizeValue] = useState<string>("1080 x 1920 px");
   const [categoryValue, setCategoryValue] = useState<string>("Foods and beverage");
   const [showSizeDropdown, setShowSizeDropdown] = useState<boolean>(false);
   const [showCategoryDropdown, setShowCategoryDropdown] = useState<boolean>(false);
 
-  const [advDescription, setAdvDescription] = useState(
-    "Advanced script: describe composition, color palette, camera angle and mood."
-  );
+  const [advDescription, setAdvDescription] = useState("Advanced script: describe composition, color palette, camera angle and mood.");
   const [advImageUri, setAdvImageUri] = useState<string | null>(null);
   const [advSizeValue, setAdvSizeValue] = useState<string>("1080 x 1920 px");
-  const [advCategoryValue, setAdvCategoryValue] = useState<string>(
-    "All categories"
-  );
-  const [advColorPalette, setAdvColorPalette] = useState<string>(
-    "Warm tones (orange, cream)"
-  );
+  const [advCategoryValue, setAdvCategoryValue] = useState<string>("All categories");
+  const [advColorPalette, setAdvColorPalette] = useState<string>("Warm tones (orange, cream)");
   const [advCameraAngle, setAdvCameraAngle] = useState<string>("45°");
   const [advMood, setAdvMood] = useState<string>("Bright, cheerful");
   const [showAdvSizeDropdown, setShowAdvSizeDropdown] = useState<boolean>(false);
